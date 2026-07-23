@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempos — Privacy Policy</title>
+<style>
+  body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; color: #1d1d1f; }
+  h1 { font-size: 1.7rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  p, li { color: #3a3a3c; } .meta { color: #86868b; font-size: .9rem; }
+  a { color: #0066cc; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #f5f5f7; } p, li { color: #d1d1d6; }
+    a { color: #6bb6ff; }
+  }
+</style>
+</head>
+<body>
+<h1>Tempos Privacy Policy</h1>
+<p class="meta">Effective July 21, 2026</p>
+
+<p>Tempos is a video-creation app with a social feed. This policy describes
+what data the app handles and why. Tempos does not track you, does not show
+ads, and does not sell your data or share it for third-party advertising or
+tracking.</p>
+
+<h2>Information we collect</h2>
+<ul>
+  <li><strong>Email address</strong> — used to sign in and to contact you about your account.</li>
+  <li><strong>Name and username</strong> — shown on your profile and next to your posts and comments.</li>
+  <li><strong>Password</strong> — stored only as a secure credential by our authentication provider; we never see it. If you use Sign in with Apple, Apple authenticates you and we store only the resulting account identifier and the email/name Apple shares.</li>
+</ul>
+
+<h2>Content you create</h2>
+<ul>
+  <li><strong>Published compositions</strong> — videos you choose to post, with their thumbnails and captions, are uploaded and visible to other signed-in users in the feed.</li>
+  <li><strong>Comments, likes, follows</strong> — stored so the social features work, and shown to the users they concern.</li>
+  <li><strong>Profile photo and bio</strong> — visible to other users if you add them.</li>
+  <li><strong>Uploaded songs</strong> — audio or the audio track from an MP4 that you deliberately submit is stored with your account identifier and catalog metadata.</li>
+  <li><strong>AI Style content</strong> — when you choose AI Style, the selected silent video reference, source/style image, and prompt are processed to create the image or video you requested.</li>
+</ul>
+<p>Videos you record in the studio stay on your device unless you publish
+them or deliberately submit selected clips to AI Style. Saved style history is
+isolated by account on the device and removed with that account; applied
+compositions remain under normal device storage controls. Exports are saved to your
+photo library only when you tap Save.</p>
+
+<h2>AI Style processing</h2>
+<p>AI Style is optional and starts only after you request generation. Tempos
+uploads its inputs to a private, account-scoped Firebase path, then uses
+OpenAI GPT Image 2 for style images and Runway Seedance 2 Mini for styled
+video. OpenAI and Runway are third-party AI providers acting as our service
+providers for the requested app functionality; neither receives your Firebase
+user ID as an API parameter. The app discloses this sharing and asks for your
+permission before your first generation request.
+Input links sent to a provider expire after 15 minutes. Firebase input objects
+are deleted after one day and generated cloud outputs after 30 days. Provider
+processing is also governed by the providers' current
+<a href="https://openai.com/policies/privacy-policy/">OpenAI privacy policy</a>
+and <a href="https://runwayml.com/privacy-policy/">Runway privacy policy</a>.</p>
+
+<h2>What we don't collect</h2>
+<p>No location, no contacts, no advertising identifiers, no Firebase Analytics
+product, no advertising or tracking SDKs, and no browsing history. The camera
+is used only while you record. The microphone is used only when you choose
+style-prompt dictation; Apple's Speech framework converts that recording into
+editable text, and Tempos does not retain the microphone audio.</p>
+
+<h2>Where data lives</h2>
+<p>Account data, published content, and temporary AI Style jobs are stored with Google Firebase
+(Authentication, Cloud Firestore, and Cloud Storage), acting as our data
+processor on Google Cloud infrastructure. See
+<a href="https://firebase.google.com/support/privacy">Firebase's privacy
+documentation</a>.</p>
+
+<h2>Firebase service diagnostics</h2>
+<p>Firebase Authentication and Cloud Firestore collect limited, non-account-linked
+service diagnostics for analytics, such as information needed to operate and
+measure the reliability of those SDKs. Firebase Authentication, Firestore, and
+Storage also send a Firebase user agent containing device, operating-system,
+app-bundle, and developer-platform information; Firebase states this user agent
+is not linked to a user or device identifier. Tempos does not use this data for
+advertising or tracking.</p>
+
+<h2>Moderation data</h2>
+<p>If you report content or another user, we store the report (what was
+reported, by whom, and the reason) so it can be reviewed and acted on. If you
+block a user, the block list is stored with your account so their content
+stays hidden.</p>
+
+<h2>Deleting your data</h2>
+<p>Delete your account any time in the app: <strong>Profile → Settings →
+Delete Account</strong>. This removes your posts, comments, likes, follows,
+notifications, profile, AI job records and cloud AI assets, and sign-in
+credentials. Tempos also asks Runway to cancel active video tasks before
+deleting their job records. A private deletion-safety marker containing your
+account identifier remains through a one-day safety grace and is removed by the
+next daily cleanup (normally within two days), or later if an outstanding Runway
+cancellation marker remains. It is used solely to block late AI output, and a
+final media sweep removes it. Content stored only on your device can be removed
+with its in-app delete control where offered, or by removing the app. You can also email us to
+request deletion.</p>
+
+<h2>Children</h2>
+<p>Tempos is not directed at children under 13, and we do not knowingly
+collect data from them. Our Terms of Use require users to be at least 13.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted at this address
+with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: <a href="mailto:jack.cockfield5@gmail.com">jack.cockfield5@gmail.com</a></p>
+<p><a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a> ·
+<a href="community-standards.html">Community Standards</a></p>
+</body>
+</html>
